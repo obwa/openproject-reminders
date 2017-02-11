@@ -19,7 +19,7 @@
 #++
 
 module OpenProject
-  module reminder
+  module Reminder
     require 'open_project/reminder/engine'
   end
 end

@@ -1,5 +1,5 @@
 module OpenProject
-  module reminder
+  module Reminder
     module DefaultData
       module_function
 

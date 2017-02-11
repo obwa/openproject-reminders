@@ -17,7 +17,8 @@
 #
 # See doc/COPYRIGHT.md for more details.
 #++
-
-module reminder
-    VERSION = "6.2.0"
+module OpenProject
+    module Reminder
+        VERSION = "6.2.0"
+    end
 end
