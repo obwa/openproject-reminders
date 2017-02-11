@@ -1,0 +1,63 @@
+es:
+  activerecord:
+    attributes:
+      reminder:
+        location: "Ubicación"
+        duration: "Duración"
+        participants: "Participantes"
+        participants_attended: "Asistentes"
+        participants_invited: "Invitados"
+        start_time: "Tiempo"
+        start_time_hour: "Hora de inicio"
+    errors:
+      messages:
+        invalid_time_format: 'no es una hora válida. Formato requerido: HH:MM'
+    models:
+      reminder_agenda: "Agenda"
+      reminder_minutes: "Minutos"
+  description_attended: "ha asistido"
+  description_invite: "invitado"
+  events:
+    reminder: Reunión editada
+    reminder_agenda: Agenda de reuniones editada
+    reminder_agenda_closed: Agenda de reuniones cerrada
+    reminder_agenda_opened: Agenda de reuniones abierta
+    reminder_minutes: Minutos de reuniones editados
+    reminder_minutes_created: Minutos de reuniones creados
+  error_notification_with_errors: 'Error al enviar la notificación. Los siguientes destinatarios no han sido notificados: %{recipients}'
+  label_reminder: "Reunión"
+  label_reminder_plural: "Reuniones"
+  label_reminder_new: "Nueva reunión"
+  label_reminder_edit: "Editar reunión"
+  label_reminder_agenda: "Agenda"
+  label_reminder_minutes: "Minutos"
+  label_reminder_close: "Cerrar"
+  label_reminder_open: "Abrir"
+  label_reminder_agenda_close: "Cerrar la agenda para comenzar los minutos"
+  label_reminder_date_time: "Fecha/hora"
+  label_reminder_diff: "Diferencia"
+  label_notify: "Enviar para revisión"
+  label_icalendar: "Enviar iCalendar"
+  label_version: "Versión"
+  label_time_zone: "Zona horaria"
+  label_start_date: "Fecha de inicio"
+  notice_successful_notification: "Notificación enviada correctamente"
+  notice_timezone_missing: No se ha establecido zona horaria y se asume %{zone}. Para elegir su zona horaria, por favor, haga clic aquí.
+  permission_create_reminders: "Crear reuniones"
+  permission_edit_reminders: "Editar reuniones"
+  permission_delete_reminders: "Eliminar reuniones"
+  permission_view_reminders: "Ver reuniones"
+  permission_create_reminder_agendas: "Gestionar agendas"
+  permission_close_reminder_agendas: "Cerrar agendas"
+  permission_send_reminder_agendas_notification: "Enviar notificaciones de revisión para las agendas"
+  permission_create_reminder_minutes: "Gestionar minutos"
+  permission_send_reminder_minutes_notification: "Enviar notificaciones de revisión para los minutos"
+  project_module_reminders: "Reuniones"
+  text_duration_in_hours: "Duración en horas"
+  text_in_hours: "en horas"
+  text_reminder_agenda_for_reminder: 'agenda para la reunión "%{reminder}"'
+  text_reminder_agenda_open_are_you_sure: "¡El contenido no guardado de los minutos se perderá! ¿Continuar?"
+  text_reminder_minutes_for_reminder: 'minutos para la reunión "%{reminder}"'
+  text_review_reminder_agenda: "%{author} ha puesto el %{link} para revisión."
+  text_review_reminder_minutes: "%{author} ha puesto el %{link} para revisión."
+  text_notificiation_invited: "El correo electrónico contiene una entrada ics para la reunión siguiente:"

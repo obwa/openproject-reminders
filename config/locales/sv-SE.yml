@@ -1,0 +1,63 @@
+sv:
+  activerecord:
+    attributes:
+      reminder:
+        location: "Plats"
+        duration: "Varaktighet"
+        participants: "Deltagare"
+        participants_attended: "Deltagare"
+        participants_invited: "Inbjudna"
+        start_time: "Tid"
+        start_time_hour: "Starting time"
+    errors:
+      messages:
+        invalid_time_format: 'is not a valid time. Required format: HH:MM'
+    models:
+      reminder_agenda: "Agenda"
+      reminder_minutes: "Protokoll"
+  description_attended: "deltog"
+  description_invite: "inbjudna"
+  events:
+    reminder: Mötet redigerat
+    reminder_agenda: Mötets agenda redigerat
+    reminder_agenda_closed: Mötets agenda stängt
+    reminder_agenda_opened: Mötets agenda öppnat
+    reminder_minutes: Mötesprotokoll redigerat
+    reminder_minutes_created: Mötesprotokoll skapat
+  error_notification_with_errors: 'Det gick inte att skicka underrättelse. Följande mottagare kunde inte underrättas: %{recipients}'
+  label_reminder: "Möte"
+  label_reminder_plural: "Möten"
+  label_reminder_new: "Nytt möte"
+  label_reminder_edit: "Redigera möte"
+  label_reminder_agenda: "Agenda"
+  label_reminder_minutes: "Protokoll"
+  label_reminder_close: "Stäng"
+  label_reminder_open: "Öppna"
+  label_reminder_agenda_close: "Stäng agendan för att påbörja protokollet"
+  label_reminder_date_time: "Datum/tid"
+  label_reminder_diff: "Skillnad"
+  label_notify: "Skicka för granskning"
+  label_icalendar: "Send iCalendar"
+  label_version: "Version"
+  label_time_zone: "Time zone"
+  label_start_date: "Start date"
+  notice_successful_notification: "Underrättelse skickades"
+  notice_timezone_missing: Ingen tidszon angiven och %{zone} antas. För att välja din tidszon, vänligen klicka här.
+  permission_create_reminders: "Skapa möten"
+  permission_edit_reminders: "Redigera möten"
+  permission_delete_reminders: "Ta bort möten"
+  permission_view_reminders: "Visa möten"
+  permission_create_reminder_agendas: "Hantera agendor"
+  permission_close_reminder_agendas: "Stäng agendor"
+  permission_send_reminder_agendas_notification: "Skicka underrättelse om granskning av agendor"
+  permission_create_reminder_minutes: "Hantera protokoll"
+  permission_send_reminder_minutes_notification: "Skicka underrättelse om granskning av protokoll"
+  project_module_reminders: "Möten"
+  text_duration_in_hours: "Duration in hours"
+  text_in_hours: "i timmar"
+  text_reminder_agenda_for_reminder: 'agenda för mötet "%{reminder}"'
+  text_reminder_agenda_open_are_you_sure: "Osparat innehåll i protokollet kommer att förloras! Vill du fortsätta?"
+  text_reminder_minutes_for_reminder: 'protokollet för mötet "%{reminder}"'
+  text_review_reminder_agenda: "%{author} har lagt upp %{link} för granskning."
+  text_review_reminder_minutes: "%{author} har lagt upp %{link} för granskning."
+  text_notificiation_invited: "This mail contains an ics entry for the reminder below:"

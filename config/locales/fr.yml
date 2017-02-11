@@ -1,0 +1,63 @@
+fr:
+  activerecord:
+    attributes:
+      reminder:
+        location: "Lieu"
+        duration: "Durée"
+        participants: "Participant(s)"
+        participants_attended: "Présent(s)"
+        participants_invited: "Invités"
+        start_time: "Heure "
+        start_time_hour: "Heure de début"
+    errors:
+      messages:
+        invalid_time_format: 'n’est pas une heure valide. Format requis : HH:MM'
+    models:
+      reminder_agenda: "Ordre du jour"
+      reminder_minutes: "Compte-rendu"
+  description_attended: "ont participé"
+  description_invite: "invité"
+  events:
+    reminder: Réunion modifiée
+    reminder_agenda: Ordre du jour de la réunion modifié
+    reminder_agenda_closed: Ordre du jour de la réunion fermé
+    reminder_agenda_opened: Ordre du jour de la réunion ouvert
+    reminder_minutes: Compte-rendu de la réunion modifié
+    reminder_minutes_created: Compte-rendu de la réunion créé
+  error_notification_with_errors: 'L''envoi de notifications a échoué. Les destinataires suivant n''ont pas pu être notifiés : %{recipients}'
+  label_reminder: "Réunion"
+  label_reminder_plural: "Réunions"
+  label_reminder_new: "Nouvelle réunion"
+  label_reminder_edit: "Modifier la réunion"
+  label_reminder_agenda: "Ordre du jour"
+  label_reminder_minutes: "Compte-rendu"
+  label_reminder_close: "Fermer"
+  label_reminder_open: "Ouvrir"
+  label_reminder_agenda_close: "Fermer l'ordre du jour pour commencer les procès-verbaux"
+  label_reminder_date_time: "Date/Heure"
+  label_reminder_diff: "Différence"
+  label_notify: "Envoyer pour révision"
+  label_icalendar: "Envoyer iCalendar"
+  label_version: "Version"
+  label_time_zone: "Fuseau horaire"
+  label_start_date: "Date de début"
+  notice_successful_notification: "Notification envoyée avec succès"
+  notice_timezone_missing: Aucun fuseau horaire n'est défini et %{zone} est supposé. Pour choisir votre fuseau horaire, veuillez cliquer ici.
+  permission_create_reminders: "Créer des réunions"
+  permission_edit_reminders: "Modifier les réunions"
+  permission_delete_reminders: "Supprimer des réunions"
+  permission_view_reminders: "Afficher les réunions"
+  permission_create_reminder_agendas: "Gérer les ordres du jour"
+  permission_close_reminder_agendas: "Fermer les ordres du jour"
+  permission_send_reminder_agendas_notification: "Envoyer une notification de révision pour les ordres du jour"
+  permission_create_reminder_minutes: "Gérer les minutes"
+  permission_send_reminder_minutes_notification: "Envoyer une notification de révision pour les minutes"
+  project_module_reminders: "Réunions"
+  text_duration_in_hours: "Durée en heures"
+  text_in_hours: "en heures"
+  text_reminder_agenda_for_reminder: 'ordre du jour de la réunion «%{reminder} »'
+  text_reminder_agenda_open_are_you_sure: "Le contenu non enregistré des minutes de la réunion sera perdu ! Continuer ?"
+  text_reminder_minutes_for_reminder: 'Minutes de la réunion "%{reminder}"'
+  text_review_reminder_agenda: "%{author} à marqué le %{link} pour vérification."
+  text_review_reminder_minutes: "%{author} à marqué le %{link} pour vérification."
+  text_notificiation_invited: "Cet e-mail contient une entrée ics pour la réunion ci-dessous :"

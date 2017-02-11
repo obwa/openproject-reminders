@@ -1,0 +1,92 @@
+<%#-- copyright
+OpenProject reminder Plugin
+
+Copyright (C) 2011-2014 the OpenProject Foundation (OPF)
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License version 3.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+
+See doc/COPYRIGHT.md for more details.
+
+++#%>
+
+<% html_title "#{l(:label_reminder)}: #{@reminder.title}" %>
+<%= toolbar title: l(:label_reminder),
+            link_to: link_to(@reminder),
+            html: { class: 'reminder--main-toolbar' } do %>
+  <% unless User.current.anonymous? %>
+    <li class="toolbar-item">
+      <div class="button">
+        <%= watcher_link @reminder, User.current %>
+      </div>
+    </li>
+  <% end %>
+  <% if authorize_for(:reminders, :edit) %>
+    <li class="toolbar-item">
+      <%= link_to({:controller => '/reminders', :action => 'edit', :id => @reminder}, class: 'button',:accesskey => accesskey(:edit)) do%>
+        <i class="button--icon icon-edit"></i> <%= l(:button_edit) %>
+      <% end %>
+    </li>
+  <% end %>
+  <% if authorize_for(:reminders, :copy) %>
+    <li class="toolbar-item">
+      <%= link_to({:controller => '/reminders', :action => 'copy', :id => @reminder}, class: 'button') do %>
+        <i class="button--icon icon-copy"></i> <%= l(:button_copy) %>
+      <% end %>
+    </li>
+  <% end %>
+  <% if authorize_for(:reminders, :destroy) %>
+    <li class="toolbar-item">
+      <%= link_to({controller: '/reminders', action: 'destroy', id: @reminder},
+                  class: 'button',
+                  method: :delete,
+                  confirm: l(:text_are_you_sure)) do %>
+        <i class="button--icon icon-delete"></i> <%= l(:button_delete) %>
+      <% end %>
+    </li>
+  <% end %>
+<% end %>
+
+<div class="reminder details box">
+  <div class="grid-block wrap">
+    <div class="grid-content small-12 block--author">
+      <%= avatar(@reminder.author) %>
+      <p class="author"><%= authoring @reminder.created_at, @reminder.author %></p>
+    </div>
+    <div class="grid-content small-6">
+      <p><strong><%= reminder.human_attribute_name(:start_time) %></strong>: <%= format_date @reminder.start_time %> <%= format_time @reminder.start_time, false %> - <%= format_time @reminder.end_time, false %> <%= Time.zone %></p>
+    </div>
+    <div class="grid-content small-6">
+      <p><strong><%= reminder.human_attribute_name(:location) %></strong>: <%=h @reminder.location %></p>
+    </div>
+    <div class="grid-content small-12">
+      <p><strong><%= reminder.human_attribute_name(:participants_invited) %></strong>: <%= format_participant_list @reminder.participants.invited %></p>
+    </div>
+    <div class="grid-content small-12">
+      <p><strong><%= reminder.human_attribute_name(:participants_attended) %></strong>: <%= format_participant_list @reminder.participants.attended %></p>
+    </div>
+  </div>
+</div>
+
+<%= render_tabs [{:name => 'agenda', :action => :create_reminder_agendas, :partial => 'reminder_contents/show', :label => :label_reminder_agenda, :content => @reminder.agenda || @reminder.build_agenda, :content_type => "reminder_agenda"},
+                 {:name => 'minutes', :action => :create_reminder_minutes, :partial => 'reminder_contents/show', :label => :label_reminder_minutes, :content => @reminder.minutes || @reminder.build_minutes, :content_type => "reminder_minutes"}] %>
+
+<% if @reminder.journals.changing.present? %>
+<div id="history">
+  <h3><%=l(:label_history)%></h3>
+  <% @reminder.journals.each do |journal| %>
+    <%= render_reminder_journal @reminder, journal %>
+  <% end %>
+</div>
+<% end %>
+
+<%= render :partial => 'shared/reminder_header' %>

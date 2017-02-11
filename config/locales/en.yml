@@ -1,0 +1,92 @@
+#-- copyright
+# OpenProject reminder Plugin
+#
+# Copyright (C) 2011-2014 the OpenProject Foundation (OPF)
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License version 3.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+#
+# See doc/COPYRIGHT.md for more details.
+#++
+
+# English strings go here for Rails i18n
+en:
+  activerecord:
+    attributes:
+      reminder:
+        location: "Location"
+        duration: "Duration"
+        participants: "Participants"
+        participants_attended: "Attendees"
+        participants_invited: "Invitees"
+        start_time: "Time"
+        start_time_hour: "Starting time"
+    errors:
+      messages:
+        invalid_time_format: "is not a valid time. Required format: HH:MM"
+    models:
+      reminder_agenda: "Agenda"
+      reminder_minutes: "Minutes"
+
+  description_attended: "attended"
+  description_invite: "invited"
+
+  events:
+    reminder: reminder edited
+    reminder_agenda: reminder agenda edited
+    reminder_agenda_closed: reminder agenda closed
+    reminder_agenda_opened: reminder agenda opened
+    reminder_minutes: reminder minutes edited
+    reminder_minutes_created: reminder minutes created
+
+  error_notification_with_errors: "Failed to send notification. The following recipients could not be notified: %{recipients}"
+
+  label_reminder: "reminder"
+  label_reminder_plural: "reminders"
+  label_reminder_new: "New reminder"
+  label_reminder_edit: "Edit reminder"
+  label_reminder_agenda: "Agenda"
+  label_reminder_minutes: "Minutes"
+  label_reminder_close: "Close"
+  label_reminder_open: "Open"
+  label_reminder_agenda_close: "Close the agenda to begin the Minutes"
+  label_reminder_date_time: "Date/Time"
+  label_reminder_diff: "Diff"
+  label_notify: "Send for review"
+  label_icalendar: "Send iCalendar"
+  label_version: "Version"
+  label_time_zone: "Time zone"
+  label_start_date: "Start date"
+
+  notice_successful_notification: "Notification sent successfully"
+  notice_timezone_missing: No time zone is set and %{zone} is assumed. To choose your time zone, please click here.
+
+  permission_create_reminders: "Create reminders"
+  permission_edit_reminders: "Edit reminders"
+  permission_delete_reminders: "Delete reminders"
+  permission_view_reminders: "View reminders"
+  permission_create_reminder_agendas: "Manage agendas"
+  permission_close_reminder_agendas: "Close agendas"
+  permission_send_reminder_agendas_notification: "Send review notification for agendas"
+  permission_create_reminder_minutes: "Manage minutes"
+  permission_send_reminder_minutes_notification: "Send review notification for minutes"
+
+  project_module_reminders: "reminders"
+
+  text_duration_in_hours: "Duration in hours"
+  text_in_hours: "in hours"
+  text_reminder_agenda_for_reminder: 'agenda for the reminder "%{reminder}"'
+  text_reminder_agenda_open_are_you_sure: "Unsaved content in the minutes will be lost! Continue?"
+  text_reminder_minutes_for_reminder: 'minutes for the reminder "%{reminder}"'
+  text_review_reminder_agenda: "%{author} has put the %{link} up for review."
+  text_review_reminder_minutes: "%{author} has put the %{link} up for review."
+  text_notificiation_invited: "This mail contains an ics entry for the reminder below:"

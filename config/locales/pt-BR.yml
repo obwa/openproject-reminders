@@ -1,0 +1,63 @@
+pt-BR:
+  activerecord:
+    attributes:
+      reminder:
+        location: "Local"
+        duration: "Duração"
+        participants: "Participantes"
+        participants_attended: "Presentes"
+        participants_invited: "Convidados"
+        start_time: "Horário"
+        start_time_hour: "Horário de início"
+    errors:
+      messages:
+        invalid_time_format: 'não é um horário válido. Formato exigido: HH:MM'
+    models:
+      reminder_agenda: "Agenda"
+      reminder_minutes: "Atas"
+  description_attended: "compareceu"
+  description_invite: "convidado"
+  events:
+    reminder: Reunião editada
+    reminder_agenda: Agenda da reunião editada
+    reminder_agenda_closed: Agenda da reunião fechada
+    reminder_agenda_opened: Agenda da reunião aberta
+    reminder_minutes: Ata da reunião editada
+    reminder_minutes_created: Ata da reunião criada
+  error_notification_with_errors: 'Falha ao enviar notificação. Os seguintes destinatários não puderam ser notificados: %{recipients}'
+  label_reminder: "Reunião"
+  label_reminder_plural: "Reuniões"
+  label_reminder_new: "Nova Reunião"
+  label_reminder_edit: "Editar Reunião"
+  label_reminder_agenda: "Agenda"
+  label_reminder_minutes: "Atas"
+  label_reminder_close: "Fechar"
+  label_reminder_open: "Abrir"
+  label_reminder_agenda_close: "Fechar a agenda para iniciar a Ata"
+  label_reminder_date_time: "Data/Horário"
+  label_reminder_diff: "Diferenças"
+  label_notify: "Enviar para revisão"
+  label_icalendar: "Enviar iCalendar"
+  label_version: "Versão"
+  label_time_zone: "Fuso horário"
+  label_start_date: "Data de início"
+  notice_successful_notification: "Notificação enviada com sucesso"
+  notice_timezone_missing: Nenhum fuso horário está definido, portanto assumiu-se %{zone}. Para escolher o seu fuso horário, clique aqui.
+  permission_create_reminders: "Criar reuniões"
+  permission_edit_reminders: "Editar reuniões"
+  permission_delete_reminders: "Excluir reuniões"
+  permission_view_reminders: "Visualizar reuniões"
+  permission_create_reminder_agendas: "Gerenciar agendas"
+  permission_close_reminder_agendas: "Fechar agendas"
+  permission_send_reminder_agendas_notification: "Enviar notificação de revisão para agendas"
+  permission_create_reminder_minutes: "Gerenciar atas"
+  permission_send_reminder_minutes_notification: "Enviar notificação de revisão das atas"
+  project_module_reminders: "Reuniões"
+  text_duration_in_hours: "Duração em horas"
+  text_in_hours: "em horas"
+  text_reminder_agenda_for_reminder: 'agenda para a reunião "%{reminder}"'
+  text_reminder_agenda_open_are_you_sure: "Conteúdo não salvo na ata será perdido! Continuar?"
+  text_reminder_minutes_for_reminder: 'ata da reunião "%{reminder}"'
+  text_review_reminder_agenda: "%{author} marcou o %{link} para revisão."
+  text_review_reminder_minutes: "%{author} marcou o %{link} para revisão."
+  text_notificiation_invited: "Este e-mail contém uma entrada de ics para a reunião abaixo:"

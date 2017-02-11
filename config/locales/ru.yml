@@ -1,0 +1,63 @@
+ru:
+  activerecord:
+    attributes:
+      reminder:
+        location: "Расположение"
+        duration: "Длительность"
+        participants: "Участники"
+        participants_attended: "Участники"
+        participants_invited: "Приглашенные"
+        start_time: "Время"
+        start_time_hour: "Время начала"
+    errors:
+      messages:
+        invalid_time_format: 'недопустимое время. Требуемый формат: ЧЧ:ММ'
+    models:
+      reminder_agenda: "Повестка дня"
+      reminder_minutes: "Протокол(-ы)"
+  description_attended: "участие"
+  description_invite: "приглашено"
+  events:
+    reminder: Встреча отредактирована
+    reminder_agenda: Повестка встречи отредактирована
+    reminder_agenda_closed: Повестка дня встречи закрыта
+    reminder_agenda_opened: Повестка дня встречи открыта
+    reminder_minutes: Править  протокол заседания
+    reminder_minutes_created: Создан протокол заседания
+  error_notification_with_errors: 'Не удалось отправить уведомление. Следующие получатели не могут быть уведомлены: %{recipients}'
+  label_reminder: "Совещание"
+  label_reminder_plural: "Совещания"
+  label_reminder_new: "Новое совещание"
+  label_reminder_edit: "Измененить совещание"
+  label_reminder_agenda: "Повестка дня"
+  label_reminder_minutes: "Протокол(-ы)"
+  label_reminder_close: "Закрыть"
+  label_reminder_open: "Открыть"
+  label_reminder_agenda_close: "Закрыть повестку для начала протоколирования"
+  label_reminder_date_time: "Дата/Время"
+  label_reminder_diff: "Различия"
+  label_notify: "Отправка на рецензию"
+  label_icalendar: "Отправить iCalendar"
+  label_version: "Версия"
+  label_time_zone: "Часовой пояс"
+  label_start_date: "Дата начала"
+  notice_successful_notification: "Уведомление успешно отправленно"
+  notice_timezone_missing: Не установлен часовой пояс и применена %{zone}. Чтобы выбрать часовой пояс, пожалуйста, нажмите сюда.
+  permission_create_reminders: "Создание совещания"
+  permission_edit_reminders: "Править встречи"
+  permission_delete_reminders: "Удалить встречу"
+  permission_view_reminders: "Просмотреть встречи"
+  permission_create_reminder_agendas: "Управлять повестками дня"
+  permission_close_reminder_agendas: "Закрыть повестки дня"
+  permission_send_reminder_agendas_notification: "Отправить уведомление о реценизии  повесток дня"
+  permission_create_reminder_minutes: "Управление протоколами"
+  permission_send_reminder_minutes_notification: "Отправить уведомление о рецензии протокола"
+  project_module_reminders: "Совещания"
+  text_duration_in_hours: "Длительность в часах"
+  text_in_hours: "в часах"
+  text_reminder_agenda_for_reminder: 'Повестка дня встречи «%{reminder}»'
+  text_reminder_agenda_open_are_you_sure: "Несохраненное содержимое протокола будет потеряно! Продолжить?"
+  text_reminder_minutes_for_reminder: 'Протокол совещания «%{reminder}»'
+  text_review_reminder_agenda: "%{author} поставил %{link} для рецензии."
+  text_review_reminder_minutes: "%{author} поставил %{link} для рецензии."
+  text_notificiation_invited: "Это сообщение содержит запись ics для совещания ниже:"

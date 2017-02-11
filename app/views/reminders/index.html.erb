@@ -1,0 +1,72 @@
+<%#-- copyright
+OpenProject reminder Plugin
+
+Copyright (C) 2011-2014 the OpenProject Foundation (OPF)
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License version 3.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+
+See doc/COPYRIGHT.md for more details.
+
+++#%>
+
+<% html_title l(:label_reminder_plural) %>
+
+<%= toolbar title: l(:label_reminder_plural) do %>
+  <% if authorize_for(:reminders, :new) %>
+      <a href="<%= new_reminder_path %>"
+         id="add-reminder-button"
+         title="<%= I18n.t(:label_reminder_new) %>"
+         arial-label="<%= I18n.t(:label_reminder_new) %>"
+         class="button -alt-highlight">
+        <i class="button--icon icon-add"></i>
+        <span class="button--text"><%= t(:label_reminder) %></span>
+      </a>
+  <% end %>
+<% end %>
+
+<% if @reminders_by_start_year_month_date.empty? -%>
+  <%= no_results_box %>
+<% else -%>
+<div class="reminders reminders_by_month_year" id="activity">
+<% @reminders_by_start_year_month_date.each do |year,reminders_by_start_month_date| -%>
+<% reminders_by_start_month_date.each do |month,reminders_by_start_date| -%>
+  <h3 class="month_year"><%= ::I18n.t('date.month_names')[month] + " #{year}" %></h3>
+  <div class="reminders_by_date">
+  <% reminders_by_start_date.each do |date,reminders| -%>
+    <h4 id="<%= date.strftime("%m-%d-%Y") %>" class="date"><%= format_activity_day(date) %></h4>
+    <dl class="reminders">
+    <% reminders.each do |reminder| -%>
+      <dt class="reminder" id="reminder-<%= reminder.id %>">
+        <%= link_to h(reminder.title), :controller => '/reminders', :action => 'show', :id => reminder %>
+      </dt>
+      <dd class="reminder" id="reminder-<%= reminder.id %>">
+        <p><strong><%= reminder.human_attribute_name(:time) %></strong>: <%= format_time reminder.start_time, false %>-<%= format_time reminder.end_time, false %></p>
+        <p><strong><%= reminder.human_attribute_name(:location) %></strong>: <%=h reminder.location %></p>
+        <p><strong><%= reminder.human_attribute_name(:participants_invited) %></strong> (<%= reminder.participants.select(&:invited).count %>): <%= format_participant_list reminder.participants.select(&:invited) %></p>
+        <p><strong><%= reminder.human_attribute_name(:participants_attended) %></strong> (<%= reminder.participants.select(&:attended).count %>): <%= format_participant_list reminder.participants.select(&:attended) %></p>
+      </dd>
+    <% end -%>
+    </dl>
+  <% end -%>
+  </div>
+<% end -%>
+<% end -%>
+</div>
+<% end -%>
+
+<p class="pagination">
+  <%= link_to_content_update(l(:label_today), page: @page_of_today, anchor: Date.today.strftime("%m-%d-%Y")) %>
+  <%= pagination_links_full @reminders, :container => false %>
+</p>
+
+<%= render :partial => 'shared/reminder_header' %>

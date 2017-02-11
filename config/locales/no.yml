@@ -1,0 +1,63 @@
+"no":
+  activerecord:
+    attributes:
+      reminder:
+        location: "Sted"
+        duration: "Varighet"
+        participants: "Deltagere"
+        participants_attended: "Tilsluttete"
+        participants_invited: "Inviterte"
+        start_time: "Tidspunkt"
+        start_time_hour: "Starting time"
+    errors:
+      messages:
+        invalid_time_format: 'is not a valid time. Required format: HH:MM'
+    models:
+      reminder_agenda: "Saksliste"
+      reminder_minutes: "Referat"
+  description_attended: "deltok"
+  description_invite: "invitert"
+  events:
+    reminder: Møtet endret
+    reminder_agenda: Saksliste endret
+    reminder_agenda_closed: Saksliste ferdiggjort
+    reminder_agenda_opened: Saksliste opprettet
+    reminder_minutes: Møtereferater endret
+    reminder_minutes_created: Møtereferater opprettet
+  error_notification_with_errors: 'Kan ikke sende påminning. Følgende mottakere kan ikke varsles: %{recipients}'
+  label_reminder: "Møte"
+  label_reminder_plural: "Møter"
+  label_reminder_new: "Nytt møte"
+  label_reminder_edit: "Redigere møte"
+  label_reminder_agenda: "Saksliste"
+  label_reminder_minutes: "Referat"
+  label_reminder_close: "Afslutt"
+  label_reminder_open: "Åpne"
+  label_reminder_agenda_close: "Lukk sakslisten for å begynne referatet"
+  label_reminder_date_time: "Dato/klokkeslett"
+  label_reminder_diff: "Forskjell"
+  label_notify: "Send till gjennomgang"
+  label_icalendar: "Send iCalendar"
+  label_version: "Versjon"
+  label_time_zone: "Time zone"
+  label_start_date: "Start date"
+  notice_successful_notification: "Påminning sendt"
+  notice_timezone_missing: Ingen tidssone angis og %{zone} antas. Vennligst klikk her for å velge egen tidssone.
+  permission_create_reminders: "Opprett møter"
+  permission_edit_reminders: "Rediger møter"
+  permission_delete_reminders: "Slett møter"
+  permission_view_reminders: "Vis møter"
+  permission_create_reminder_agendas: "Håndter sakslister"
+  permission_close_reminder_agendas: "Lukk sakslister"
+  permission_send_reminder_agendas_notification: "Send påminning om gjennomgang av sakslister"
+  permission_create_reminder_minutes: "Håndter referater"
+  permission_send_reminder_minutes_notification: "Send påminning om gjennomgang av referater"
+  project_module_reminders: "Møter"
+  text_duration_in_hours: "Duration in hours"
+  text_in_hours: "i timer"
+  text_reminder_agenda_for_reminder: 'saksliste for møtet "%{reminder}"'
+  text_reminder_agenda_open_are_you_sure: "Ulagret innhold i refarat går tapt! Vil du fortsette?"
+  text_reminder_minutes_for_reminder: 'referat for møtet "%{reminder}"'
+  text_review_reminder_agenda: "%{author} har lagt opp %{link} for gjennomgang."
+  text_review_reminder_minutes: "%{author} har lagt opp %{link} for gjennomgang."
+  text_notificiation_invited: "This mail contains an ics entry for the reminder below:"

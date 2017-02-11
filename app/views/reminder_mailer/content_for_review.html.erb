@@ -1,0 +1,38 @@
+<%#-- copyright
+OpenProject reminder Plugin
+
+Copyright (C) 2011-2014 the OpenProject Foundation (OPF)
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License version 3.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+
+See doc/COPYRIGHT.md for more details.
+
+++#%>
+
+<h1><%= link_to(@reminder.project.name, project_url(@reminder.project)) %>: <%= link_to(@reminder.title, reminder_url(@reminder)) %></h1>
+<em><%= @reminder.author %></em>
+
+<ul>
+<li><%=t :label_reminder_date_time %>: <%= format_date @reminder.start_time %> <%= format_time @reminder.start_time, false %>-<%= format_time @reminder.end_time, false %> <%= Time.zone %></li>
+<li><%=reminder.human_attribute_name(:location) %>: <%= @reminder.location %></li>
+<li><%=reminder.human_attribute_name(:participants_invited) %>: <%= @reminder.participants.invited.sort.join("; ") %></li>
+<li><%=reminder.human_attribute_name(:participants_attended) %>: <%= @reminder.participants.attended.sort.join("; ") %></li>
+</ul>
+
+<p>
+  <%=raw t(:"text_review_#{@content_type}",
+           :author => h(User.current),
+           :link => link_to(t(:"text_#{@content_type}_for_reminder",
+                              :reminder => @reminder.title),
+                            reminder_url(@reminder))) %>
+</p>

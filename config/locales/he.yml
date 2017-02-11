@@ -1,0 +1,63 @@
+he:
+  activerecord:
+    attributes:
+      reminder:
+        location: "מיקום"
+        duration: "משך זמן"
+        participants: "משתתפים"
+        participants_attended: "נוכחים"
+        participants_invited: "מוזמנים"
+        start_time: "זמן"
+        start_time_hour: "Starting time"
+    errors:
+      messages:
+        invalid_time_format: 'is not a valid time. Required format: HH:MM'
+    models:
+      reminder_agenda: "סדר היום"
+      reminder_minutes: "דקות"
+  description_attended: "נכחו"
+  description_invite: "הוזמנו"
+  events:
+    reminder: הפגישה נערכה
+    reminder_agenda: סדר היום לפגישה נערך
+    reminder_agenda_closed: סדר היום לפגישה נסגר
+    reminder_agenda_opened: סדר היום לפגישה נפתח
+    reminder_minutes: דקות פגישה נערך
+    reminder_minutes_created: דקות פגישה נוצר
+  error_notification_with_errors: 'שליחת ההודעה נכשלה. הנמענים הבאים לא יקבלו את ההודעה: %{recipients}'
+  label_reminder: "פגישה"
+  label_reminder_plural: "פגישות"
+  label_reminder_new: "פגישה חדשה"
+  label_reminder_edit: "עריכת פגישה"
+  label_reminder_agenda: "סדר היום"
+  label_reminder_minutes: "דקות"
+  label_reminder_close: "סגור"
+  label_reminder_open: "פתח"
+  label_reminder_agenda_close: "סגור את סדר היום כדי להתחיל את הדקות"
+  label_reminder_date_time: "תאריך/שעה"
+  label_reminder_diff: "Diff"
+  label_notify: "שלח לבדיקה"
+  label_icalendar: "Send iCalendar"
+  label_version: "גירסה"
+  label_time_zone: "Time zone"
+  label_start_date: "Start date"
+  notice_successful_notification: "הודעה נשלחה בהצלחה"
+  notice_timezone_missing: אין איזור זמן מוגדר, ההערכה היא %{zone}. כדי לבחור את איזור הזמן שלך, אנא לחץ כאן.
+  permission_create_reminders: "צור פגישות"
+  permission_edit_reminders: "ערוך פגישות"
+  permission_delete_reminders: "מחק פגישות"
+  permission_view_reminders: "הצג פגישות"
+  permission_create_reminder_agendas: "נהל סדר יום"
+  permission_close_reminder_agendas: "סגור סדר יום"
+  permission_send_reminder_agendas_notification: "שלח הודעה סקירה עבור סדר יום"
+  permission_create_reminder_minutes: "נהל דקות"
+  permission_send_reminder_minutes_notification: "שלח הודעה סקירה עבור דקות"
+  project_module_reminders: "פגישות"
+  text_duration_in_hours: "Duration in hours"
+  text_in_hours: "בשעות"
+  text_reminder_agenda_for_reminder: 'סדר היום לפגישה "%{reminder}"'
+  text_reminder_agenda_open_are_you_sure: "תוכן שלא נשמר בדקות יאבד! האם להמשיך?"
+  text_reminder_minutes_for_reminder: 'דקות לפגישה "%{reminder}"'
+  text_review_reminder_agenda: "על %{author} לשים את %{link} לבדיקה."
+  text_review_reminder_minutes: "על %{author} לשים את %{link} לבדיקה."
+  text_notificiation_invited: "This mail contains an ics entry for the reminder below:"

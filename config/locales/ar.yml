@@ -1,0 +1,63 @@
+ar:
+  activerecord:
+    attributes:
+      reminder:
+        location: "الموقع"
+        duration: "المدّة"
+        participants: "المشاركون"
+        participants_attended: "الحضور"
+        participants_invited: "المدعوّون"
+        start_time: "الوقت"
+        start_time_hour: "وقت البدء"
+    errors:
+      messages:
+        invalid_time_format: 'ليس وقتًا صالحًا. التصميم المطلوب: HH:MM'
+    models:
+      reminder_agenda: "جدول الأعمال"
+      reminder_minutes: "محضر الجلسة"
+  description_attended: "حَضَر"
+  description_invite: "دعا"
+  events:
+    reminder: تحرير الاجتماع
+    reminder_agenda: تحرير جدول أعمال الاجتماع
+    reminder_agenda_closed: أُغْلِق جدول أعمال الاجتماع
+    reminder_agenda_opened: فُتِح جدول أعمال الاجتماع
+    reminder_minutes: تحرير محضر الجلسة
+    reminder_minutes_created: إنشاء محضر الجلسة
+  error_notification_with_errors: 'فشِل في إرسال الإشعار. لم يتم إشعار المستلمين التالية أسماؤهم: %{recipients}'
+  label_reminder: "الاجتماع"
+  label_reminder_plural: "الاجتماعات"
+  label_reminder_new: "اجتماع جديد"
+  label_reminder_edit: "تحرير الاجتماع"
+  label_reminder_agenda: "جدول الأعمال"
+  label_reminder_minutes: "محضر الجلسة"
+  label_reminder_close: "مُغلق"
+  label_reminder_open: "مفتوح"
+  label_reminder_agenda_close: "أغلِق جدول الأعمال للبدء في محضر الجلسة"
+  label_reminder_date_time: "التاريخ/الوقت"
+  label_reminder_diff: "الاختلاف"
+  label_notify: "إرسال للمراجعة"
+  label_icalendar: "Send iCalendar"
+  label_version: "النسخة"
+  label_time_zone: "المنطقة الزمنية"
+  label_start_date: "تاريخ البدء"
+  notice_successful_notification: "تم إرسال الإشعار بنجاح"
+  notice_timezone_missing: لم يتم تعيين المنطقة الزمنية و%{zone} مُفترض. لاختيار منطقتك الزمنية، من فضلك اضغط هنا.
+  permission_create_reminders: "إنشاء الاجتماعات"
+  permission_edit_reminders: "تعديل الاجتماعات"
+  permission_delete_reminders: "إلغاء الاجتماعات"
+  permission_view_reminders: "عرض الاجتماعات"
+  permission_create_reminder_agendas: "إدارة جداول الأعمال"
+  permission_close_reminder_agendas: "إغلاق جداول الأعمال"
+  permission_send_reminder_agendas_notification: "أرسِل إشعارًا لمراجعة جداول الأعمال"
+  permission_create_reminder_minutes: "إدارة محضر الجلسة"
+  permission_send_reminder_minutes_notification: "أرسِل إشعارًا لمراجعة محضر الجلسة"
+  project_module_reminders: "الاجتماعات"
+  text_duration_in_hours: "المدة بالساعات"
+  text_in_hours: "في الساعات"
+  text_reminder_agenda_for_reminder: 'جدول أعمال للاجتماع "%{reminder}"'
+  text_reminder_agenda_open_are_you_sure: "سيتم فقدان محتوى محضر الجلسة التي لم يتم حفظها! هل تريد المتابعة؟"
+  text_reminder_minutes_for_reminder: 'محضر الجسلة للاجتماع "%{reminder}"'
+  text_review_reminder_agenda: "%{author} طرح %{link} للمراجعة."
+  text_review_reminder_minutes: "%{author} طرح %{link} للمراجعة."
+  text_notificiation_invited: "This mail contains an ics entry for the reminder below:"

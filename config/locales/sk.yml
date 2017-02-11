@@ -1,0 +1,63 @@
+sk:
+  activerecord:
+    attributes:
+      reminder:
+        location: "Miesto"
+        duration: "Trvanie"
+        participants: "Účastníci"
+        participants_attended: "Účastníci"
+        participants_invited: "Pozvaných"
+        start_time: "Čas"
+        start_time_hour: "Starting time"
+    errors:
+      messages:
+        invalid_time_format: 'is not a valid time. Required format: HH:MM'
+    models:
+      reminder_agenda: "Agenda"
+      reminder_minutes: "Zápisnica"
+  description_attended: "sa zúčastnil"
+  description_invite: "pozvaní"
+  events:
+    reminder: Stretnutie upravené
+    reminder_agenda: Agenda stretnutia upravená
+    reminder_agenda_closed: Agenda stretnutia uzavretá
+    reminder_agenda_opened: Agenda stretnutia otvorená
+    reminder_minutes: Zápisnica zo stretnutia upravená
+    reminder_minutes_created: Zápisnica zo stretnutia vytvorená
+  error_notification_with_errors: 'Nepodarilo sa odoslať notifikáciu. Nasledovní príjemcovia nemohli byť oboznámení: %{recipients}'
+  label_reminder: "Stretnutie"
+  label_reminder_plural: "Stretnutia"
+  label_reminder_new: "Nové stretnutie"
+  label_reminder_edit: "Upraviť stretnutie"
+  label_reminder_agenda: "Agenda"
+  label_reminder_minutes: "Zápisnica"
+  label_reminder_close: "Zatvoriť"
+  label_reminder_open: "Otvoriť"
+  label_reminder_agenda_close: "Uzavrieť agendu za účelom začatia logu stretnutia"
+  label_reminder_date_time: "Dátum/čas"
+  label_reminder_diff: "Rozdieľ"
+  label_notify: "Odoslať na revíziu"
+  label_icalendar: "Send iCalendar"
+  label_version: "Verzia"
+  label_time_zone: "Time zone"
+  label_start_date: "Start date"
+  notice_successful_notification: "Notifikácia úspešne odoslaná"
+  notice_timezone_missing: Časové pásmo nebolo špecificky nastavené, použilo sa teda %{zone}. Ak chcete vybrať iné časové pásmo, kliknite prosím tu.
+  permission_create_reminders: "Vytvárať stretnutia"
+  permission_edit_reminders: "Upravovať stretnutia"
+  permission_delete_reminders: "Odstraňovať stretnutia"
+  permission_view_reminders: "Prezerať stretnutia"
+  permission_create_reminder_agendas: "Spravovať stretnutia"
+  permission_close_reminder_agendas: "Definovať agendy stretnutí"
+  permission_send_reminder_agendas_notification: "Rozposielať notifikácie ne revízie agend stretnutí"
+  permission_create_reminder_minutes: "Spravovať zápisnice zo stretnutí"
+  permission_send_reminder_minutes_notification: "Rozposielať notifikácie na revízie zápisníc zo stretnutí"
+  project_module_reminders: "Stretnutia"
+  text_duration_in_hours: "Duration in hours"
+  text_in_hours: "v hodinách"
+  text_reminder_agenda_for_reminder: 'agenda stretnutia "%{reminder}"'
+  text_reminder_agenda_open_are_you_sure: "Neuložené obsah zápisnice stretnutia bude stratený! Chcete pokračovať?"
+  text_reminder_minutes_for_reminder: 'zápisnica zo stretnutia "%{reminder}"'
+  text_review_reminder_agenda: "%{author} odoslal %{link} na revíziu."
+  text_review_reminder_minutes: "%{author} odoslal %{link} na revíziu."
+  text_notificiation_invited: "This mail contains an ics entry for the reminder below:"

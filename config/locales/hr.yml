@@ -1,0 +1,63 @@
+hr:
+  activerecord:
+    attributes:
+      reminder:
+        location: "Lokacija"
+        duration: "Trajanje"
+        participants: "Učesnici"
+        participants_attended: "Sudionici"
+        participants_invited: "Pozvane osobe"
+        start_time: "Vrijeme"
+        start_time_hour: "Starting time"
+    errors:
+      messages:
+        invalid_time_format: 'is not a valid time. Required format: HH:MM'
+    models:
+      reminder_agenda: "Dnevni red"
+      reminder_minutes: "Minute"
+  description_attended: "prisustvovali su"
+  description_invite: "pozvani"
+  events:
+    reminder: Sastanak uređen
+    reminder_agenda: Dnevni red sastanka uređen
+    reminder_agenda_closed: Dnevni red sastanka zaključen
+    reminder_agenda_opened: Dnevni red sastanka otvoren
+    reminder_minutes: Minute sastanka uređene
+    reminder_minutes_created: Minute sastanka dodane
+  error_notification_with_errors: 'Neuspjelo slanje notifikacije. Sljedeći korisnici nisu mogli biti obaviješteni: %{recipients}'
+  label_reminder: "Sastanak"
+  label_reminder_plural: "Sastanci"
+  label_reminder_new: "Novi sastanak"
+  label_reminder_edit: "Uredite sastanak"
+  label_reminder_agenda: "Dnevni red"
+  label_reminder_minutes: "Minute"
+  label_reminder_close: "Zatvori"
+  label_reminder_open: "Otvori"
+  label_reminder_agenda_close: "Zatvorite dnevni red, da bi započeli s Minutama"
+  label_reminder_date_time: "Datum/vrijeme"
+  label_reminder_diff: "Razl"
+  label_notify: "Šalji na pregled"
+  label_icalendar: "Send iCalendar"
+  label_version: "Verzija"
+  label_time_zone: "Time zone"
+  label_start_date: "Start date"
+  notice_successful_notification: "Notifikacija uspješno poslana"
+  notice_timezone_missing: Vremenska zona nije postavljena na osnovu zamišljene %{zone} zone. Da bi ste odabrali vremensku zonu molim vas kliknite ovdje.
+  permission_create_reminders: "Dodaj sastanke"
+  permission_edit_reminders: "Uredi sastanke"
+  permission_delete_reminders: "Izbriši sastanke"
+  permission_view_reminders: "Pogledaj sastanke"
+  permission_create_reminder_agendas: "Upravljanje dnevnim redom"
+  permission_close_reminder_agendas: "Zaključi dnevni red"
+  permission_send_reminder_agendas_notification: "Pošalji notifikaciju o uređenim dnevnim redovima"
+  permission_create_reminder_minutes: "Upravljaj minutama"
+  permission_send_reminder_minutes_notification: "Pošalji notifikaciju o uređenim minutama"
+  project_module_reminders: "Sastanci"
+  text_duration_in_hours: "Duration in hours"
+  text_in_hours: "u satima"
+  text_reminder_agenda_for_reminder: 'dnevni red za sastank "%{reminder}"'
+  text_reminder_agenda_open_are_you_sure: "Nepohranjeni sadržaj u minutama biti će izgubljen! Da li želite nastaviti?"
+  text_reminder_minutes_for_reminder: 'minute za sastanak "%{reminder}"'
+  text_review_reminder_agenda: "%{author} je dodao poveznicu %{link} za provjeru."
+  text_review_reminder_minutes: "%{author} je dodao poveznicu %{link} za provjeru."
+  text_notificiation_invited: "This mail contains an ics entry for the reminder below:"

@@ -1,0 +1,63 @@
+da:
+  activerecord:
+    attributes:
+      reminder:
+        location: "Placering"
+        duration: "Varighed"
+        participants: "Deltagere"
+        participants_attended: "Tilsluttede"
+        participants_invited: "Inviterede"
+        start_time: "Tidspunkt"
+        start_time_hour: "Starting time"
+    errors:
+      messages:
+        invalid_time_format: 'is not a valid time. Required format: HH:MM'
+    models:
+      reminder_agenda: "Dagsorden"
+      reminder_minutes: "Referat"
+  description_attended: "tilsluttede"
+  description_invite: "inviteret"
+  events:
+    reminder: Mødet er ændret
+    reminder_agenda: Mødedagsorden er ændret
+    reminder_agenda_closed: Mødedagsorden er afsluttet
+    reminder_agenda_opened: Mødedagsorden er påbegyndt
+    reminder_minutes: Mødereferat er ændret
+    reminder_minutes_created: Mødereferat er udfærdiget
+  error_notification_with_errors: 'Kunne ikke sende påmindelse. Følgende modtagere blev ikke nået: %{recipients}'
+  label_reminder: "Møde"
+  label_reminder_plural: "Møder"
+  label_reminder_new: "Nyt møde"
+  label_reminder_edit: "Rediger møde"
+  label_reminder_agenda: "Dagsorden"
+  label_reminder_minutes: "Referat"
+  label_reminder_close: "Luk"
+  label_reminder_open: "Åbn"
+  label_reminder_agenda_close: "Afslut dagsorden og påbegynd referat"
+  label_reminder_date_time: "Dato/tidspunkt"
+  label_reminder_diff: "Uenigheder"
+  label_notify: "Send til vurdering"
+  label_icalendar: "Send iCalendar"
+  label_version: "Version"
+  label_time_zone: "Time zone"
+  label_start_date: "Start date"
+  notice_successful_notification: "Påmindelse er afsendt"
+  notice_timezone_missing: Der er ikke sat en tidszone og systemet har valgt %{zone}. For at vælge din egen tidszone, klik venligst her.
+  permission_create_reminders: "Opret møder"
+  permission_edit_reminders: "Rediger møder"
+  permission_delete_reminders: "Slet møder"
+  permission_view_reminders: "Se møder"
+  permission_create_reminder_agendas: "Håndter dagsordner"
+  permission_close_reminder_agendas: "Luk dagsordner"
+  permission_send_reminder_agendas_notification: "Send påmindelse om vurdering af dagsorden"
+  permission_create_reminder_minutes: "Håndter referater"
+  permission_send_reminder_minutes_notification: "Send påmindelse om vurdering af referater"
+  project_module_reminders: "Møder"
+  text_duration_in_hours: "Duration in hours"
+  text_in_hours: "i timer"
+  text_reminder_agenda_for_reminder: 'dagsorden for mødet "%{reminder}"'
+  text_reminder_agenda_open_are_you_sure: "Indhold i referatet, der ikke er gemt vil gå tabt! Fortsæt?"
+  text_reminder_minutes_for_reminder: 'referat  for mødet "%{reminder}"'
+  text_review_reminder_agenda: "%{author} har lagt dette %{link} ud til vurdering."
+  text_review_reminder_minutes: "%{author} har lagt dette %{link} ud til vurdering."
+  text_notificiation_invited: "This mail contains an ics entry for the reminder below:"

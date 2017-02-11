@@ -1,0 +1,63 @@
+de:
+  activerecord:
+    attributes:
+      reminder:
+        location: "Ort/Raum"
+        duration: "Dauer"
+        participants: "Teilnehmer"
+        participants_attended: "Anwesend"
+        participants_invited: "Eingeladen"
+        start_time: "Anfangszeit"
+        start_time_hour: "Beginn"
+    errors:
+      messages:
+        invalid_time_format: 'ist keine gültige Zeit. Erforderliches Format: 15:12'
+    models:
+      reminder_agenda: "Agenda"
+      reminder_minutes: "Protokoll"
+  description_attended: "teilgenommen"
+  description_invite: "eingeladen"
+  events:
+    reminder: Besprechung bearbeitet
+    reminder_agenda: Agenda bearbeitet
+    reminder_agenda_closed: Agenda abgeschlossen
+    reminder_agenda_opened: Agenda geöffnet
+    reminder_minutes: Protokoll bearbeitet
+    reminder_minutes_created: Protokoll erstellt
+  error_notification_with_errors: 'Benachrichtigungversenden fehlgeschlagen. Folgende Empfänger konnten nicht benachrichtigt werden: %{recipients}'
+  label_reminder: "Besprechung"
+  label_reminder_plural: "Besprechungen"
+  label_reminder_new: "Neue Besprechung"
+  label_reminder_edit: "Besprechung bearbeiten"
+  label_reminder_agenda: "Agenda"
+  label_reminder_minutes: "Protokoll"
+  label_reminder_close: "Schließen"
+  label_reminder_open: "Öffnen"
+  label_reminder_agenda_close: "Agenda schließen um mit dem Protokoll zu beginnen"
+  label_reminder_date_time: "Datum/Uhrzeit"
+  label_reminder_diff: "Differenz"
+  label_notify: "Zur Einsicht verschicken"
+  label_icalendar: "ICalendar senden"
+  label_version: "Version"
+  label_time_zone: "Zeitzone"
+  label_start_date: "Beginn"
+  notice_successful_notification: "Benachrichtigung erfolgreich gesendet"
+  notice_timezone_missing: Keine Zeitzone eingestellt und daher %{zone} angenommen. Um Ihre Zeitzone einzustellen, klicken Sie bitte hier.
+  permission_create_reminders: "Besprechungen erstellen"
+  permission_edit_reminders: "Besprechungen bearbeiten"
+  permission_delete_reminders: "Besprechungen löschen"
+  permission_view_reminders: "Besprechungen ansehen"
+  permission_create_reminder_agendas: "Agenden anlegen/bearbeiten"
+  permission_close_reminder_agendas: "Agenden schließen"
+  permission_send_reminder_agendas_notification: "Benachrichtigungen für Agenden verschicken"
+  permission_create_reminder_minutes: "Protokolle anlegen/bearbeiten"
+  permission_send_reminder_minutes_notification: "Benachrichtigungen für Protokolle verschicken"
+  project_module_reminders: "Besprechungen"
+  text_duration_in_hours: "Dauer in Stunden"
+  text_in_hours: "in Stunden"
+  text_reminder_agenda_for_reminder: 'Agenda für die Besprechung "%{reminder}"'
+  text_reminder_agenda_open_are_you_sure: "Nicht-gespeicherte Inhalte des Protokolls werden durch diese Aktion verworfen! Weitermachen?"
+  text_reminder_minutes_for_reminder: 'Protokoll für die Besprechung "%{reminder}"'
+  text_review_reminder_agenda: "%{author} hat die %{link} zur Einsicht freigegeben."
+  text_review_reminder_minutes: "%{author} hat die %{link} zur Einsicht freigegeben."
+  text_notificiation_invited: "Diese Email enthält einen ics Eintrag für die untenstehende Besprechung:"
