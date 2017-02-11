@@ -7,7 +7,7 @@ require 'open_project/reminder/version'
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = 'openproject-reminder'
-  s.version     = OpenProject::reminder::VERSION
+  s.version     = reminder::VERSION
   s.authors     = 'OpenProject GmbH'
   s.email       = 'info@openproject.com'
   s.homepage    = 'https://community.openproject.org/projects/plugin-reminders'
