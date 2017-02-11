@@ -18,7 +18,7 @@
 # See doc/COPYRIGHT.md for more details.
 #++
 
-module reminderContentsHelper
+module ReminderContentsHelper
   def can_edit_reminder_content?(content, content_type)
     authorize_for(content_type.pluralize, 'update') && content.editable?
   end
